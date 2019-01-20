@@ -18,7 +18,6 @@ class fps {
     } else {
       const deltaT = t - this.fpsShowTime;
       const fps = deltaT ? (1000 * this.fpsCounter) / deltaT : 0.0;
-      console.log("fps: ", fps);
       if (this.opts.show) {
         this.opts.show(fps);
       }
